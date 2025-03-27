@@ -41,7 +41,7 @@ services:
       - AIRFLOW__OPENMETADATA_INTEGRATION__ENABLED=True
       - AIRFLOW__OPENMETADATA_INTEGRATION__API_ENDPOINT=http://openmetadata-server:8585/api
       - AIRFLOW__OPENMETADATA_INTEGRATION__AUTH_PROVIDER=openmetadata
-      - AIRFLOW__OPENMETADATA_INTEGRATION__AUTH_CONFIG="{"jwtToken": \"Gb389a-9f76-gdjs-a92j-0242bk94356\"}"
+      - AIRFLOW__OPENMETADATA_INTEGRATION__AUTH_CONFIG=Gb389a-9f76-gdjs-a92j-0242bk94356
     volumes:
       - ./dags:/opt/airflow/dags
       - ./logs:/opt/airflow/logs
