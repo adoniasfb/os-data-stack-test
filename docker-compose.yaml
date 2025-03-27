@@ -110,7 +110,7 @@ services:
     volumes:
       - elasticsearch_data:/usr/share/elasticsearch/data
   openmetadata-server:
-    build: ./docker/opemetadata
+    build: ./docker/openmetadata
     depends_on:
       - mysql
       - elasticsearch
@@ -125,7 +125,7 @@ services:
       - "8585:8585"
 
   openmetadata-ingestion:
-    build: ./docker/opemetadata
+    build: ./docker/openmetadata
     depends_on:
       - openmetadata-server
     environment:
